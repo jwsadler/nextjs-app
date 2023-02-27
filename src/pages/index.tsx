@@ -11,6 +11,7 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ data }: { data: { time: string } }) {
+  //@ts-ignore
   const serverData = JSON.parse(data);
 
   return (
